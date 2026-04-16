@@ -1,0 +1,32 @@
+{
+  "name": "XiaoMusic",
+  "version": "1.0.0",
+  "slug": "xiaomusic",
+  "description": "使用小爱音箱播放音乐",
+  "url": "https://github.com/hanxi/xiaomusic",
+  "startup": "application",
+  "boot": "auto",
+  "init": false,
+  "arch": ["amd64", "aarch64"],
+  "ports": {
+    "8090/tcp": 58090
+  },
+  "ports_description": {
+    "8090/tcp": "XiaoMusic Web UI"
+  },
+  "webui": "http://[HOST]:[PORT:8090]/",
+  "map": [
+    "share:rw"
+  ],
+  "environment": {
+    "XIAOMUSIC_PORT": "8090",
+    "XIAOMUSIC_PUBLIC_PORT": "58090",
+    "XIAOMUSIC_CONF_PATH": "/data/conf",
+    "XIAOMUSIC_MUSIC_PATH": "/share/xiaomusic",
+    "XIAOMUSIC_TEMP_PATH": "/share/xiaomusic/tmp",
+    "XIAOMUSIC_DOWNLOAD_PATH": "/share/xiaomusic/download",
+    "XIAOMUSIC_CACHE_DIR": "/share/xiaomusic/cache"
+  },
+  "options": {},
+  "schema": {}
+}
