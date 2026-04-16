@@ -1,1 +1,12 @@
-使用小爱音箱播放音乐，音乐使用 yt-dlp 下载，更多使用方法，访问https://github.com/hanxi/xiaomusic
+# XiaoMusic
+
+安装后通过以下地址访问：
+
+`http://HA_IP:58090`
+
+说明：
+
+- 配置文件保存在 `/data/conf`
+- 音乐目录保存在 `/share/xiaomusic`
+- 首次进入 Web 页面后，填写小米账号和密码，保存后获取设备列表
+- 不建议在 Web 后台里把音乐路径和配置路径改成别的目录
